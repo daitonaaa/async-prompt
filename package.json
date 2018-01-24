@@ -1,7 +1,11 @@
 {
-  "name": "co-prompt",
+  "name": "async-prompt",
   "version": "1.0.0",
   "description": "simple terminal user input 'co'",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm login"
+  },
   "keywords": [
     "terminal",
     "console",
@@ -9,12 +13,16 @@
     "confirm",
     "password",
     "mask",
-    "co"
+    "async",
+    "promise"
   ],
   "devDependencies": {
     "should": "~1.2.2",
-    "mocha": "~1.10.0",
-    "co": "2.1.0"
+    "mocha": "~1.10.0"
+  },
+  "author": {
+    "name": "yeliex",
+    "email": "yeliex@yeliex.com"
   },
   "license": "MIT",
   "dependencies": {
@@ -22,6 +30,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/visionmedia/co-prompt.git"
+    "url": "https://github.com/yeliex/async-prompt.git"
+  },
+  "engines": {
+    "node": ">=4.8.7"
   }
 }

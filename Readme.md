@@ -1,21 +1,21 @@
 
 # co-prompt
 
-  Sane terminal user-input for nodejs that return thunks for [co](https://github.com/visionmedia/co).
+  Sane terminal user-input for nodejs that return thunks for Promise.
 
 ## Installation
 
 ```
-$ npm install co-prompt
+$ npm install async-prompt
 ```
 
 ## Examples
 
 ```js
-var name = yield prompt('username: ');
-var pass = yield password('password: ');
-var desc = yield multiline('description: ');
-var ok = yield confirm('are you sure? ');
+const name = await prompt('username: ');
+const pass = await password('password: ');
+const desc = await multiline('description: ');
+const ok = await confirm('are you sure? ');
 ```
 
 ## API
@@ -28,6 +28,8 @@ var ok = yield confirm('are you sure? ');
 
   Prompt for password input with `msg` and optional `mask`
   defaulting to "*".
+  
+  *if run without tty, will use prompt(msg) instead*
 
 ### prompt.multiline(msg)
 
@@ -41,3 +43,5 @@ var ok = yield confirm('are you sure? ');
 
   MIT
 
+## 
+Forked from [co-prompt](https://github.com/tj/co-prompt)

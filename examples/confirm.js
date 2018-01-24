@@ -1,10 +1,7 @@
+const prompt = require('../index');
+const confirm = prompt.confirm;
 
-var co = require('co');
-var prompt = require('..');
-var confirm = prompt.confirm;
-
-co(function *(){
-  var ok = yield confirm('are you sure? ');
+(async () => {
+  const ok = await confirm('are you ok? ');
   console.log('answer: %s', ok);
-  process.stdin.pause();
 })();
