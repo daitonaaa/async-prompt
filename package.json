@@ -1,6 +1,6 @@
 {
   "name": "async-prompt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "simple terminal user input 'co'",
   "main": "index.js",
   "keywords": [
