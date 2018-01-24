@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "simple terminal user input 'co'",
   "main": "index.js",
-  "scripts": {
-    "start": "npm login"
-  },
   "keywords": [
     "terminal",
     "console",

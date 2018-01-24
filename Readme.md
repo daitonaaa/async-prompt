@@ -1,5 +1,5 @@
 
-# co-prompt
+# async-prompt
 
   Sane terminal user-input for nodejs that return thunks for Promise.
 
